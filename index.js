@@ -2,11 +2,15 @@
 
 const express = require('express');
 
+const cors = require('cors')
+
 const Users = require('./data/db.js');
 
 const server = express();
 
 server.use(express.json());
+
+server.use(cors());
 
 //Get to '/'
 
